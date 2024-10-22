@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dexihfiff6uoo"]
+
+[ext_resource type="PackedScene" uid="uid://cv6qd68nfh7q3" path="res://scenes/spikes/small_spikes_up.tscn" id="1_qh8f2"]
+
+[node name="Small Spikes" instance=ExtResource("1_qh8f2")]
+rotation = 1.5708

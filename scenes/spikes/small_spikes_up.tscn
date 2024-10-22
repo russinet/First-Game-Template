@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv6qd68nfh7q3"]
+
+[ext_resource type="PackedScene" uid="uid://dfagrprxyl1ue" path="res://scenes/spikes/spike_up.tscn" id="1_cv82j"]
+[ext_resource type="Texture2D" uid="uid://dkuxbsqbuj7hb" path="res://assets/sprites/spikes_small.png" id="2_2m1fx"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_dtrov"]
+points = PackedVector2Array(4, 3, -4, 3, -8, 8, 8, 8)
+
+[node name="Small Spikes" instance=ExtResource("1_cv82j")]
+texture = ExtResource("2_2m1fx")
+
+[node name="CollisionShape2D" parent="Killzone" index="1"]
+shape = SubResource("ConvexPolygonShape2D_dtrov")
